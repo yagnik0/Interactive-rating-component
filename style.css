@@ -21,60 +21,62 @@ body{
     height: 100vh;
 }
 
-form{
+.rating-container, .thankyou-container{
     background-color: hsl(213, 19%, 18%);
     max-width: 35rem;
     padding: 2rem;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
 }
 
 .star-style{
     background-color: #222;
     border-radius: 50%;
     padding: 1.5rem;
+    width: 50px;
 }
 
 .heading-style {
     font-size: 3rem;
     font-weight: 700;
-    margin: 2rem 0;
 }
 
 .para-style {
     color:hsl(216, 12%, 54%) ;
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 2rem 0;
 }
 
-.radio {
-    display: none;
-    margin: 2rem 0;
+.button-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.label{
-    padding: 1.2rem 2rem;
-    font-size: 1.8rem;
-    margin-right: 0.8rem;
-    border-radius: 50%;
+.btn{
     background-color: #222;
+    border: none;
+    border-radius: 50%;
+    padding: 1.2rem 1.8rem;
     color: hsl(216, 12%, 54%);
-    cursor: pointer;
-    transition: background-color 0.4s ease-in-out;
 }
 
-.radio:hover + .label {
-    background-color: hsl(217, 12%, 63%);
+.btn:hover{
+    background-color:hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
 
-
+.btn:focus{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
 
 .submit {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     display: block;
-    margin-top: 3rem;
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -89,3 +91,28 @@ form{
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
 }
+
+
+/* Thank you Card styling */
+.thankyou-container, .para-style {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-style{
+    width: 150px;
+} 
+
+.para-style-2{
+    background-color: #222;
+    color: hsl(25, 97%, 53%);
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
