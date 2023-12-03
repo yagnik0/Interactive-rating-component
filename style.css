@@ -94,7 +94,7 @@ body{
 
 
 /* Thank you Card styling */
-.thankyou-container, .para-style {
+.thankyou-container{
     justify-content: center;
     align-items: center;
     text-align: center;
